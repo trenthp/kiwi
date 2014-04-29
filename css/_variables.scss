@@ -1,0 +1,24 @@
+// FONT STACKS
+$font-stack-primary: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+$font-stack-secondary: 'Open Sans', sans-serif;
+$font-stack-footer: 'arial', sans-serif;
+
+// COLORS
+$color-primary: #fff;
+$color-secondary: #e44d26;
+
+
+/*-------COMMON TASKS------*/
+// BLOCKQUOTE
+@mixin blockquote() {
+  font-size: 2em;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+// NAV LINKS
+@mixin nav-links() {
+  list-style: none;
+  text-decoration: none;
+}

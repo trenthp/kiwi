@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 /* normalize.css v2.0.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -590,9 +591,10 @@ body {
 .container_12 {
   zoom: 1; }
 
+/*-------COMMON TASKS------*/
 body {
   background: url("../img/bg.png");
-  color: #fff;
+  color: white;
   font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
 
 blockquote {
@@ -604,17 +606,19 @@ blockquote {
 
 nav li {
   float: left;
+  margin: 0 10px 0 10px;
   list-style: none;
-  margin: 0 10px 0 10px; }
+  text-decoration: none; }
 nav a:link,
 nav a:visited {
-  color: #fff;
+  color: white;
   padding: 10px 10px 10px 40px;
-  text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  list-style: none;
+  text-decoration: none; }
 nav a:hover,
 nav a:active {
-  color: #E44D26; }
+  color: #e44d26; }
 
 #home a:hover {
   background: url("../img/icons/home.png") no-repeat left center; }
@@ -626,14 +630,14 @@ nav a:active {
   background: url("../img/icons/html5.png") no-repeat left center; }
 
 h3 {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 article img {
-  border: 10px solid #fff; }
+  border: 10px solid white; }
 
 img + p {
   line-height: 24px;
   text-indent: 32px; }
 
 footer p {
-  font: 10px/16px 'arial', sans-serif; }
+  font: 10px/16px "arial", sans-serif; }
