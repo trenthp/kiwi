@@ -595,8 +595,7 @@ body {
 body {
   background: url("../img/bg.png");
   color: white;
-  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-  background: red; }
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
 
 blockquote {
   color: #e44d26;
