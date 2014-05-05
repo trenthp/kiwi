@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import "_normalize";
 @import "_grid";
 @import "_variables";
@@ -17,48 +16,82 @@ blockquote {
 
 nav {
 	li {
-	float: left;
-	margin: 0 10px 0 10px;
-	@include nav-links();
+		float: left;
+		margin: 0 10px 0 10px;
+		@include nav-links();
 	}
 
 	a:link,
 	a:visited {
-	color: $color-primary;
-	padding: 10px 10px 10px 40px;
-	text-transform: uppercase;
-	@include nav-links();
+		color: $color-primary;
+		padding: 10px 10px 10px 40px;
+		text-transform: uppercase;
+		@include nav-links();
 	}
 
 	a:hover,
 	a:active {
-	color: $color-secondary;
+		color: $color-secondary;
 	}
 }
 
+#html5logo {
+	background-image: url('../img/icons.png');
+	background-position: 0px -111px;
+	width: 128px;
+	height: 128px;
+}
+
 #home a:hover {
-	background: url("../img/icons/home.png") no-repeat left center;
+	background-image: url('../img/icons.png');
+	background-position: 0px -37px;
+	height: 23px;
 }
 
 #super a:hover {
-	background: url("../img/icons/super.png") no-repeat left center;
+	background-image: url('../img/icons.png');
+	background-position: 0px 0px;
+	height: 23px;
 }
 
 #html5 a:hover {
-	background: url("../img/icons/html5.png") no-repeat left center;
+	background-image: url('../img/icons.png');
+	background-position: 0px -74px;
+	height: 23px;
 }
 
 h3 {
 	font-family: $font-stack-secondary;
 }
 
-article img {
-	border: 10px solid $color-primary;
+section {
+	div {
+		background: url('../img/people.jpg');
+		height: 200px;
+		width: 200px;
+
+		&.person1 {
+			background-position: 0px 0px;
+		}
+		&.person2 {
+			background-position: 0px -400px;
+		}
+		&.person3 {
+			background-position: 0px -200px;
+		}
+		&.person4 {
+			background-position: 0px -600px;
+		}
+	}
+
 }
 
-img + p {
-	line-height: 24px;
-	text-indent: 32px;
+article div {
+	border: 10px solid $color-primary;
+	+ p {
+		line-height: 24px;
+		text-indent: 32px;
+	}
 }
 
 footer p {
